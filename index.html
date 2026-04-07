@@ -28,7 +28,7 @@
 </script>
     
 <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-<h2>GRADE PREDICTOR\nVER 6.7</h2>
+<h2>GRADE PREDICTOR VER 6.7</h2>
 <p>You definitely did great. But if you want to peek, press the button below.</p>
 </body>
 
@@ -42,9 +42,9 @@
             const randomNum = Math.floor(Math.random() * (100 - 69 + 1)) + 69;
             document.getElementById("number").innerText = randomNum;
 
-        if (randomNum % 3 == 1) {
+        if (randomNum % 3 === 1) {
             document.getElementById("comment").innerText = "Congrats!!  You are a genius! :D";
-        } else if (randomNum % 3 == 2) {
+        } else if (randomNum % 3 === 2) {
             document.getElementById("comment").innerText = "WOW! ur so smart!! :O";
         } else {
             document.getElementById("comment").innerText = "Yay!!! you did it :3";

@@ -6,14 +6,24 @@
         background-color: rgb(235, 192, 5);
         color: rgb(46, 0, 124);
     }
+    #number {
+            font-size: 2em;
+            color: #007BFF;
+            margin: 20px 0;
+        }
+    button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Gay Gay Gay</title>
-    <script>
-        alert("⚠️ Your gay\n\nIf you dont want this virus press close");
-    </script>
 </head>
+    <script>
+        alert("⚠️ ALERT!!\n\nSuper secret advanced premonition technology ahead.\n\nProceed with caution.");
+    </script>
 <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
 <h2>LIGMA BALLS!</h2>
 <p>Your phone is completely fine — this is jack btw, im super smart right?! not after you see my calc grade lol TnT</p>
@@ -21,24 +31,31 @@
 <body style =" font-family: Papyrus; text-align: center; margin-top: 50px;">
 <p>was this funny enough or should i make one that has a loading bar and shuts your phone down. jk this is just a web page but the loading bar is possible.</p>
 </body>
-<head>
 <h3 style =" font-family: SansSerif; text-align: left; margin-bottom: 450px ">
     <h3>THIS IS A PRANK!!!!</h3>
 </h3>
-    <p>This is an example page.</p>
-</head>
 
-<button onclick="typePass()">DONT CLICK THIS</button>
+<h1>Grade: </h1>
+<div id="number"></div>
+    <h4 id="comment">Good luck!</h4>
+<button onclick="typePass()">PREDICT UR GRADE!!</button>
 
 <script>
-    function typePass(){
-       const pass = prompt("Enter password:");
-       if (pass == "1234"){
-           alert("Youve gotten in - good luck");
-       }
-       else{
-           alert("wrong try again you HOBO!");
-       }
+    function generateRandomNumber(min = 69, max = 100) {
+            if (typeof min !== "number" || typeof max !== "number" || min > max) {
+                document.getElementById("number").textContent = "Invalid range!";
+                return;
+            }
+            const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById("number").textContent = randomNum;
+
+        if (randomNum % 3 == 1) {
+            document.getElementById("comment").textContent = "Congrats!!  You are a genius! :D";
+        } else if (randomNum % 3 == 2) {
+            document.getElementById("comment").textContent = "WOW! ur so smart!! :O";
+        } else {
+            document.getElementById("comment").textContent = "Yay!!! you did it :3";
+        }
 
 
     }

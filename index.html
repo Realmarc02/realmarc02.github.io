@@ -41,28 +41,30 @@
 
 <script>
     function generateRandomNumber() {
-            const randomNum = Math.floor(Math.random() * (100 - 69 + 1)) + 69;
+            const randomNum = Math.floor(Math.random() * (101 - 69 + 1)) + 69;
             document.getElementById("number").innerText = randomNum;
 
-        if (randomNum % 3 === 1) {
-            document.getElementById("comment").innerText = "Congrats!!  You are a genius! :D";
+        if (randomNum === 69) {
+            document.getElementById("comment").innerText = "nice.";
+        } else if(randomNum === 101) {
+            document.getElementById("comment").innerText = "incredible... my jaw dropped. crystal ball shattered";
+        } else if(randomNum % 3 === 1) {
+            document.getElementById("comment").innerText = "Congrats!!  You're are a genius! :D";
         } else if (randomNum % 3 === 2) {
             document.getElementById("comment").innerText = "WOW! ur so smart!! :O";
         } else {
             document.getElementById("comment").innerText = "Yay!!! you did it :3";
         }
 
-
     }
-</script>
-    
-<script>
+
     function playSound() {
-    var sound = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+    var sound = new Audio("https://www.myinstants.com/en/instant/sonic-ring/?utm_source=copy&utm_medium=share");
     sound.play();
     }
 
     document.querySelector(".button").addEventListener("click", playSound);
+    
 </script>
 
 

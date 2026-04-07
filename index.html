@@ -28,30 +28,26 @@
 </script>
     
 <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-<h2>GRADE PREDICTOR</h2>
+<h2>GRADE PREDICTOR\nVER 6.7</h2>
 <p>You definitely did great. But if you want to peek, press the button below.</p>
 </body>
 
 <h1 style =" font-family: SansSerif; text-align: left; margin-bottom: 450px >Grade: </h1>
 <div id="number"></div>
-    <h4 id="comment">Good luck!</h4>
+<h4 id="comment">Good luck!</h4>
 <button onclick="generateRandomNumber()">PREDICT UR GRADE!!</button>
 
 <script>
-    function generateRandomNumber(min = 69, max = 100) {
-            if (typeof min !== "number" || typeof max !== "number" || min > max) {
-                document.getElementById("number").textContent = "Invalid range!";
-                return;
-            }
-            const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-            document.getElementById("number").textContent = randomNum;
+    function generateRandomNumber() {
+            const randomNum = Math.floor(Math.random() * (100 - 69 + 1)) + 69;
+            document.getElementById("number").innerText = randomNum;
 
         if (randomNum % 3 == 1) {
-            document.getElementById("comment").textContent = "Congrats!!  You are a genius! :D";
+            document.getElementById("comment").innerText = "Congrats!!  You are a genius! :D";
         } else if (randomNum % 3 == 2) {
-            document.getElementById("comment").textContent = "WOW! ur so smart!! :O";
+            document.getElementById("comment").innerText = "WOW! ur so smart!! :O";
         } else {
-            document.getElementById("comment").textContent = "Yay!!! you did it :3";
+            document.getElementById("comment").innerText = "Yay!!! you did it :3";
         }
 
 

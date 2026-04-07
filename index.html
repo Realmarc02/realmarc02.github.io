@@ -31,6 +31,7 @@
 <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
 <h2>ELIJAH GRADE PREDICTOR VER 6.7</h2>
 <p>You definitely did great! But if you want to peek into your future, press the button below.</p>
+<p>If you don't like my prediction, click it again! It's totally legit trust me</p>
 </body>
 
 <button onclick="generateRandomNumber(); playSound();">PREDICT UR GRADE!!</button>
@@ -47,10 +48,10 @@
         if (randomNum === 69) {
             document.getElementById("comment").innerText = "nice.";
         } else if(randomNum === 101) {
-            document.getElementById("comment").innerText = "incredible... my jaw dropped. crystal ball shattered";
-        } else if(randomNum % 3 === 1) {
+            document.getElementById("comment").innerText = "incredible... my jaw dropped. my crystal ball shattered. My wig flew across the room. You have done the impossible.";
+        } else if(randomNum % 6 === 1 || randomNum % 6 === 3) {
             document.getElementById("comment").innerText = "Congrats!!  You're are a genius! :D";
-        } else if (randomNum % 3 === 2) {
+        } else if (randomNum % 6 === 2 || randomNum % 6 === 4) {
             document.getElementById("comment").innerText = "WOW! ur so smart!! :O";
         } else {
             document.getElementById("comment").innerText = "Yay!!! you did it :3";
